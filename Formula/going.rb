@@ -5,21 +5,21 @@
 class Going < Formula
   desc "Simple CLI tool for working with AWS."
   homepage ""
-  version "0.0.6"
+  version "0.0.7"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/afrase/going/releases/download/v0.0.6/going_Darwin_arm64.tar.gz"
-      sha256 "c443c6e8022f33b58d7ed0f8031e3a34c42ee944b2a9cd12bb41ed9af8b19c86"
+      url "https://github.com/afrase/going/releases/download/v0.0.7/going_Darwin_arm64.tar.gz"
+      sha256 "fd49f86117c413eb66e9be32f2a845ffff02313507eb91a041de13dc6b3413b1"
 
       def install
         bin.install "going"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/afrase/going/releases/download/v0.0.6/going_Darwin_x86_64.tar.gz"
-      sha256 "bbd5207a915be5f4d390ee80acd79a32ac98a34d1b90bbf35b61a3873b24ae86"
+      url "https://github.com/afrase/going/releases/download/v0.0.7/going_Darwin_x86_64.tar.gz"
+      sha256 "cb773988c95bf41d5bfe6f29bd36d2d9dc3df9a4e207f6ae802fedd4237c85b9"
 
       def install
         bin.install "going"
