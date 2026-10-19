@@ -1,6 +1,6 @@
 cask "sextant" do
-  version "0.3.0"
-  sha256 "f2443ab0257f9bbbfba651074e04ef40a890bec68f5e31157911812d6466bfb9"
+  version "0.4.0"
+  sha256 "2846e55b4f17774f0bf60aa9977314a1fa3a6019bb28e49b6e577416f6e9759d"
 
   url "https://github.com/afrase/Sextant/releases/download/v#{version}/Sextant-#{version}.zip"
   name "Sextant"
