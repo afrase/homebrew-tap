@@ -1,10 +1,10 @@
 cask "nushi" do
-  version "0.1.0"
-  sha256 "a4c50f37054f928b6ad2581bfba0cb4853baea5a52e78749752ede10de020a8a"
+  version "0.1.1"
+  sha256 "1a69005bb60b7104d884fb75e7c4b4479da0e4df66241aecd688fbbda4c958aa"
 
   url "https://github.com/afrase/nushi/releases/download/v#{version}/Nushi-#{version}.zip"
   name "Nushi"
-  desc "Runs coding agents as chats over the Agent Client Protocol, with a diff viewer"
+  desc "Agentic development environment running coding agents as chats over ACP"
   homepage "https://github.com/afrase/nushi"
 
   # The daemon inside is cgo, built on Apple silicon; Go 1.27 and Start at login need macOS 13.
