@@ -1,6 +1,6 @@
 cask "nushi" do
-  version "0.1.4"
-  sha256 "85928dca38fc21ea1f751b5a918cffa75718792e1f84b81a27745bfe235e0851"
+  version "0.1.5"
+  sha256 "7fd6cd6de709eac6bd9cc57716a6dc1b16d74ff459bb7391059dbb239aa72052"
 
   url "https://github.com/afrase/nushi/releases/download/v#{version}/Nushi-#{version}.zip"
   name "Nushi"
@@ -20,8 +20,8 @@ cask "nushi" do
   end
 
   # The app quits (an upgrade opens it again). The daemon isn't stopped here: an upgrade leaves it and its chats
-  # running (the app offers Restart daemon), and it stops by itself about a minute after its app is gone for good
-  # (ADR 0055). No launchctl: Start at login's agent only opens the daemon at login and goes with the app, and
+  # running until they're idle, when the app has it restart into the new one (ADR 0056); it stops by itself about a
+  # minute after its app is gone for good (ADR 0055). No launchctl: Start at login's agent only opens the daemon at login and goes with the app, and
   # Homebrew's launchctl asks for sudo, on upgrades too. Chats' data stays; zap removes it.
   uninstall quit: "com.nushihq.Nushi"
 
