@@ -1,6 +1,6 @@
 cask "nushi" do
-  version "0.1.23"
-  sha256 "2a1dabd1e54eb5f0944073003237fb6b22b2e838fa8f49168fe33238cad73ba4"
+  version "0.1.24"
+  sha256 "f7662bbc5a2597bd0989f26b205618d78e0a157615bb8194afc58545a4a5eae0"
 
   url "https://github.com/afrase/nushi/releases/download/v#{version}/Nushi-#{version}.zip"
   name "Nushi"
