@@ -1,6 +1,6 @@
 cask "sextant" do
-  version "0.6.0"
-  sha256 "2ec2e6ba4783734949308a2ae286e7f1609686becaeedf41faba99698353844f"
+  version "0.7.0"
+  sha256 "80a959df7f3e6167f01033bf8ded3cf9cbb6b288537cf328ba532c0c8ff76c51"
 
   url "https://github.com/afrase/Sextant/releases/download/v#{version}/Sextant-#{version}.zip"
   name "Sextant"
@@ -9,6 +9,9 @@ cask "sextant" do
 
   depends_on arch: :arm64
   depends_on macos: :tahoe
+
+  # Sextant updates itself with Sparkle (ADR 0070), so `brew upgrade` leaves it alone unless run with --greedy.
+  auto_updates true
 
   app "Sextant.app"
 
