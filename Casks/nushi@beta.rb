@@ -1,8 +1,8 @@
 # Both of the tap's casks, written by tools/cask.sh: nushi has releases only, nushi@beta beta versions too and each
 # release that passes them (ADR 0108). They install the same app, so one of them at a time.
 cask "nushi@beta" do
-  version "0.53.0-beta.7"
-  sha256 "b5c99e13b490bc3e66fb12e016ac570cbd6504ad22cf3ed88bf54f7bd010f1e1"
+  version "0.53.0-beta.8"
+  sha256 "49970be16e851fcc6d081f7bb732a0aae3a539f82493a092d14f655951c1f6ae"
 
   url "https://github.com/afrase/nushi/releases/download/v#{version}/Nushi-#{version}.zip"
   name "Nushi"
